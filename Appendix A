@@ -1,0 +1,12 @@
+from sympy import * 
+import matplotlib.pyplot as plt 
+bernoullis = [log(abs(bernoulli(i))) for i in range(2,100,2)] 
+print(bernoullis) 
+x = [i for i in range(2,100,2)] 
+print(x)
+plt.plot(x, bernoullis) 
+plt.xlabel(' n ' ) 
+plt.ylabel(' log(bn)') 
+
+
+plt.show()
